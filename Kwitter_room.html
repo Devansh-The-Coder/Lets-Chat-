@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Kwitter Room</title>
+            <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="stylesheet" href="Kwitter_room.css">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.5/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+    </head>
+    <body>
+        <center>
+            <div class="container">
+                <button class="glyphicon-glyphicon-logout" style="border-radius: 30px;" onclick="Logout()">Logout</button><br>
+                <h1>LetsChat</h1><br>
+                <label style="width: 30px; color: red;">View your messages here!</label><br>
+                </div>
+                <div id="Output">
+
+                </div>
+                <br><br>
+                <input id="Message" placeholder="Type your message" style="border-radius: 30px; background-color: red; color: white; text-align: center;"/><br>
+                <button id="Send" onclick="Send()">Send Message</button><br><br>
+                <footer><marquee>LetsChat • V1.0.1</marquee></footer>
+        </center>
+    </body>
+</html>
